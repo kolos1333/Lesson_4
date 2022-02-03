@@ -1,0 +1,62 @@
+/* &display=swap */
+@import "null.css";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+/* "@font-face должен быть именно такой порядок записи, сначало формат woff2, a потом woff */
+
+@font-face {
+	font-family:Larsseit;
+	src: url('../fonts/Larsseit.woff2') format("woff2"),url('../fonts/Larsseit.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family:Larsseit_bold;
+	src: url('../fonts/Larsseit_Bold.woff2') format("woff2"),url('../fonts/Larsseit_Bold.woff') format("woff");
+	/* font-wieght конкретное значение данного свойства должно быть подключенно через @import так как если этого не сделать, то будет использоваться значение по умолчанию */
+	font-weight: 700;
+	/* font-style значение свойства должно совпадать с начертанием используемго шрифта в макете */
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family:Larsseit;
+	src: url('../fonts/Larsseit_Medium.woff2') format("woff2"),url('../fonts/Larsseit_Medium.woff') format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+p.main{
+	font-family: lato,larsseit;
+	text-align: justify;
+	line-height: 2.0;
+	text-decoration:line-through ;
+	text-transform: capitalize;
+	color: blueviolet;
+}
+
+p.main.page-paragraph-two{
+	line-height: 4.0;
+	text-align: right;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: red;
+}
+
+a{
+	text-decoration: underline;
+}
+
+h1{
+text-align: center;
+font-family: lato;
+font-weight: 900;
+font-size: 40px;
+}
+span.text-shadow{
+	text-shadow: 10px -40px 1px rgba(0, 0, 0, 0.782);
+}
